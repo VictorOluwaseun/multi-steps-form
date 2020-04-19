@@ -20,31 +20,31 @@ export class FormPersonalDetails extends Component {
   return (
    <MuiThemeProvider>
     <>
-     <AppBar title="Enter User Details" />
+     <AppBar title="Enter Personal Details" />
      <TextField
-      hintText="Enter Your First Name"
-      floatingLabelText="First Name"
-      onChange={handleChange("firstName")}
-      defaultValue={values.firstName}
-     />{" "}
+      hintText="Enter Your Occupation"
+      floatingLabelText="Ocupation"
+      onChange={handleChange("values.occupation")}
+      defaultValue={values.occupation}
+     />
      <br />
      <TextField
-      hintText="Enter Your Last Name"
-      floatingLabelText="Last Name"
-      onChange={handleChange("lastName")}
-      defaultValue={values.lastName}
-     />{" "}
+      hintText="Enter Your City"
+      floatingLabelText="City"
+      onChange={handleChange("city")}
+      defaultValue={values.city}
+     />
      <br />
      <TextField
-      hintText="Enter Your Email"
-      floatingLabelText="Email"
-      onChange={handleChange("email")}
-      defaultValue={values.email}
-     />{" "}
+      hintText="Enter Your Bio"
+      floatingLabelText="Bio"
+      onChange={handleChange("bio")}
+      defaultValue={values.bio}
+     />
      <br />
      <RaisedButton
       label="Back"
-      primary={true}
+      primary={false}
       style={styles.button}
       onClick={this.back}
      />
