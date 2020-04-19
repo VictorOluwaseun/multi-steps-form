@@ -58,7 +58,14 @@ export class UserForm extends Component {
      />
     );
    case 2:
-    return <h1>FormPersonalDetails</h1>;
+    return (
+     <FormPersonalDetails
+      nextStep={this.nextStep}
+      handleChange={this.handleChange}
+      values={values}
+      prevStep={this.prevStep}
+     />
+    );
    case 3:
     return <h1>Conform</h1>;
    case 4:
